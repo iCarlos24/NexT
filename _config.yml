@@ -40,8 +40,8 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
+  small: /images/favicon.ico
+  medium: /images/favicon.ico
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
@@ -52,7 +52,7 @@ language_switcher: false
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2016
 
   # Icon between year and copyright info.
   icon:
@@ -61,13 +61,13 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#C0C0C0"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -97,10 +97,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+# scheme: Mist
+# scheme: Pisces
+scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -117,13 +117,13 @@ darkmode: false
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  # about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
-  #commonweal: /404/ || fa fa-heartbeat
+  # schedule: /schedule/ || fa fa-calendar
+  # sitemap: /sitemap.xml || fa fa-sitemap
+  # commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -163,7 +163,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/avatar.gif
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -177,8 +177,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  GitHub: https://github.com/iCarlos24 || fab fa-github
+  E-Mail: mailto:xuqicai0214@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -201,7 +201,7 @@ links_settings:
   layout: block
 
 links:
-  #Title: http://yoursite.com
+  # Title: http://scever.me
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -227,7 +227,7 @@ chat:
 
 
 # ---------------------------------------------------------------
-# Post Settings
+# Post Settings 
 # See: https://theme-next.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
@@ -243,7 +243,7 @@ post_meta:
   item_text: true
   created_at: true
   updated_at:
-    enable: true
+    enable: false
     another_day: true
   categories: true
 
@@ -261,13 +261,13 @@ tag_icon: false
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
+  enable: true
   animation: false
-  #comment: Donate comment here.
+  comment: 生活不止眼前的苟且，还有诗与远方...
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
+  wechatpay: /images/wechatpay.jpg
+  alipay: /images/alipay.jpg
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
@@ -610,21 +610,21 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
+  enable: true
+  appid: kHpdqSJ7Qmj53Il1XawBgdhR-gzGzoHsz
+  appkey: fHjuSYW2EobwVS5QtdlY5YXD
   notify: false # Mail notifier
   verify: false # Verification code
-  placeholder: Just go go # Comment box placeholder
+  placeholder: 说点什么吧... # Comment box placeholder
   avatar: mm # Gravatar style
-  guest_info: nick,mail,link # Custom comment header
+  guest_info: nick,mail # Custom comment header
   pageSize: 10 # Pagination size
-  language: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
+  language: zh-cn # Language, available values: en, zh-cn
+  visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
-  #post_meta_order: 0
+  post_meta_order: 0
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -689,15 +689,15 @@ cnzz_siteid:
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
-  enable: false
-  app_id: # <your app id>
-  app_key: # <your app key>
+  enable: true
+  app_id: 321lbEVmawMPJ83LY1TMrnI8-gzGzoHsz
+  app_key: 1HmdaVNlAT86F72QQP6tlQAa
   # Required for apps from CN region
-  server_url: # <your server url>
+  server_url: http://scever.me
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
+  security: false
 
 # Another tool to show number of visitors to each article.
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
